@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.a617e044.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.34e34200.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.34e34200.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.ef30146c.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.ef30146c.js.map",
-    "static/js/2.5b180a2b.chunk.js": "/react-gh-pages/static/js/2.5b180a2b.chunk.js",
-    "static/js/2.5b180a2b.chunk.js.map": "/react-gh-pages/static/js/2.5b180a2b.chunk.js.map",
-    "static/js/3.deafa581.chunk.js": "/react-gh-pages/static/js/3.deafa581.chunk.js",
-    "static/js/3.deafa581.chunk.js.map": "/react-gh-pages/static/js/3.deafa581.chunk.js.map",
-    "index.html": "/react-gh-pages/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/react-gh-pages/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.5b180a2b.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.5b180a2b.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/react-gh-pages/static/media/logo.6ce24c58.svg"
+    "main.css": "/sixcents/static/css/main.a617e044.chunk.css",
+    "main.js": "/sixcents/static/js/main.34e34200.chunk.js",
+    "main.js.map": "/sixcents/static/js/main.34e34200.chunk.js.map",
+    "runtime-main.js": "/sixcents/static/js/runtime-main.83b09294.js",
+    "runtime-main.js.map": "/sixcents/static/js/runtime-main.83b09294.js.map",
+    "static/js/2.5b180a2b.chunk.js": "/sixcents/static/js/2.5b180a2b.chunk.js",
+    "static/js/2.5b180a2b.chunk.js.map": "/sixcents/static/js/2.5b180a2b.chunk.js.map",
+    "static/js/3.deafa581.chunk.js": "/sixcents/static/js/3.deafa581.chunk.js",
+    "static/js/3.deafa581.chunk.js.map": "/sixcents/static/js/3.deafa581.chunk.js.map",
+    "index.html": "/sixcents/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/sixcents/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.5b180a2b.chunk.js.LICENSE.txt": "/sixcents/static/js/2.5b180a2b.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/sixcents/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ef30146c.js",
+    "static/js/runtime-main.83b09294.js",
     "static/js/2.5b180a2b.chunk.js",
     "static/css/main.a617e044.chunk.css",
     "static/js/main.34e34200.chunk.js"
