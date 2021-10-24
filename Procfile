@@ -1,0 +1,1 @@
+web: gunicorn image_to_text:app
