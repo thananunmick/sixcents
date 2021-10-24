@@ -2,13 +2,15 @@ import { Button, Form, Input } from 'semantic-ui-react';
 import App from './App'
 import React from 'react';
 import axios from 'axios';
-import './Main.css'
+import './Main.css';
+import logo from './SixCents_beta_logo.png';
+import {useEffect} from 'react';
 
 class Main extends React.Component {
   constructor(){
     super();
     this.state = {
-      text : "Yo",
+      text : "",
       showMainComp : true,
       image: null,
     };
@@ -49,27 +51,40 @@ class Main extends React.Component {
         .catch(err => console.log(err))
   };
 
+  handleText = (e) => {
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setCount('Timeout called!');
+    //     }, 1000);
+    //     return () => clearTimeout(timer);
+    // }, []);
+    setTimeout(() => this.setState({...this.state, showMainComp : false}), 1000);
+    // this.setState({...this.state, showMainComp : false});
+    // e.currentTarget.blur();
+  }
+
   render(){
     if(this.state.showMainComp){
       return (
         <div className="MainInput">
-            <Form onSubmit={() => this.setState({...this.state, showMainComp : false})} style={{borderRadius: "20px", borderColor: "black", borderStyle: "solid", padding: "5%"}}>
-            <h1>Text Input</h1>
-            <p>
-            <Input placeholder='Hello World' value={this.state.text} onChange={(e) => this.setState({...this.state, text: e.target.value})}/>
-            {/* <Button onClick={() => this.setState({showMainComp : false})}>Submit</Button> */}
-            </p>
-            <Input type="submit"/>
+            <img src={logo} style={{height: "auto", width: "80%"}}/>
+            <Form onSubmit={this.handleText} style={{borderRadius: "20px", borderColor: "black", borderStyle: "solid", padding: "5%"}}>
+                <h1>Text Input</h1>
+                <p>
+                <Input placeholder='Hello World' value={this.state.text} onChange={(e) => this.setState({...this.state, text: e.target.value})}/>
+                {/* <Button onClick={() => this.setState({showMainComp : false})}>Submit</Button> */}
+                </p>
+                <Input type="submit"/>
             </Form>
 
             <Form onSubmit={this.handleSubmit} style={{borderRadius: "20px", borderColor: "black", borderStyle: "solid", padding: "5%"}}>
-            <h1>Image Input</h1>
-            <p>
-                <Input type="file"
-                    id="image"
-                    accept="image/png, image/jpeg"  onChange={this.handleImageChange} required/>
-            </p>
-            <Input type="submit"/>
+                <h1>Image Input</h1>
+                <p>
+                    <Input type="file"
+                        id="image"
+                        accept="image/png, image/jpeg"  onChange={this.handleImageChange} required/>
+                </p>
+                <Input type="submit"/>
             </Form>
         </div>
       );
