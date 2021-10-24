@@ -1,17 +1,15 @@
 import React, {useState} from "react";
 
 class Circle extends React.Component {
-    handleCursorHover = () => {
-        console.log("ok bro\n");
-        window.navigator.vibrate(200);
-    };
-
     render(){
-        const status = this.props.vibrate;
+        const [vibrate, currentX, currentY, posx, posy, width, height] = this.props;
        
-        if(status){
+        if(vibrate){
+            if(posx <= currentX  && currentX<= posx+width && posy <= currentY && currentY <= posy+height){
+                window.navigator.vibrate(200);
+            }
             return (
-                <div class="ActiveCircle" onMouseOver={this.handleCursorHover}></div>
+                <div class="ActiveCircle" ></div>
             );
         }else{
             return (
