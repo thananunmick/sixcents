@@ -7,7 +7,7 @@ import re
 
 UPLOAD_FOLDER = './uploads'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
-pytesseract.pytesseract.tesseract_cmd = r"/app/.apt/usr/bin/tesseract"
+pytesseract.pytesseract.tesseract_cmd = r"/app/.apt/usr/share/tesseract-ocr/4.00/tessdata"
 
 # create flask object
 app = Flask(__name__)
