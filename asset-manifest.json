@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/sixcents/static/css/main.b2a346e8.chunk.css",
-    "main.js": "/sixcents/static/js/main.bf51b356.chunk.js",
-    "main.js.map": "/sixcents/static/js/main.bf51b356.chunk.js.map",
+    "main.css": "/sixcents/static/css/main.de3e416c.chunk.css",
+    "main.js": "/sixcents/static/js/main.eeb7cc74.chunk.js",
+    "main.js.map": "/sixcents/static/js/main.eeb7cc74.chunk.js.map",
     "runtime-main.js": "/sixcents/static/js/runtime-main.9db1115c.js",
     "runtime-main.js.map": "/sixcents/static/js/runtime-main.9db1115c.js.map",
     "static/js/2.7660df5d.chunk.js": "/sixcents/static/js/2.7660df5d.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.381211f2.chunk.js": "/sixcents/static/js/3.381211f2.chunk.js",
     "static/js/3.381211f2.chunk.js.map": "/sixcents/static/js/3.381211f2.chunk.js.map",
     "index.html": "/sixcents/index.html",
-    "static/css/main.b2a346e8.chunk.css.map": "/sixcents/static/css/main.b2a346e8.chunk.css.map",
+    "static/css/main.de3e416c.chunk.css.map": "/sixcents/static/css/main.de3e416c.chunk.css.map",
     "static/js/2.7660df5d.chunk.js.LICENSE.txt": "/sixcents/static/js/2.7660df5d.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/sixcents/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9db1115c.js",
     "static/js/2.7660df5d.chunk.js",
-    "static/css/main.b2a346e8.chunk.css",
-    "static/js/main.bf51b356.chunk.js"
+    "static/css/main.de3e416c.chunk.css",
+    "static/js/main.eeb7cc74.chunk.js"
   ]
 }
