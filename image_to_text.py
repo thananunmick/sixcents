@@ -25,6 +25,7 @@ def ocr_core(filename):
 
 # process text
 def preprocess_text(message):
+    message = message.lower()
     processed_text = re.findall(r"(?i)\b[a-z]+\b", message)
     return " ".join(processed_text)
 
