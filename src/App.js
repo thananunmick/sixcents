@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
 import Circle from './Circle.js'
@@ -10,7 +9,7 @@ class App extends React.Component {
     super(props);
 
     let strIndex = 0;
-    let textToRead = "hello";
+    let textToRead = props.text.toLowerCase();
 
     this.state = {
       strIndex: strIndex,
@@ -18,7 +17,7 @@ class App extends React.Component {
       currentChar: textToRead[strIndex],
       currentX: 0,
       currentY: 0,
-      mouseDown: true,
+      mouseDown: false,
       posx: [0, 0, 0, 0, 0, 0],
       posy: [0, 0, 0, 0, 0, 0],
       width: 0,
@@ -75,6 +74,8 @@ class App extends React.Component {
       '.': [false, true, false, false, true, true],
       '?': [false, true, true, false, false, true],
       '!': [false, true, true, false, true, false],
+      ' ': [false, false, false, false, false, false],
+      undefined: [false, false, false, false, false, false]
     }
   }
 
@@ -156,17 +157,6 @@ class App extends React.Component {
     }
   }
 
-  handleVibrate = (ind) => {
-    let currentChar = this.state.currentChar;
-    let parseChar = parseInt(currentChar);
-
-    if (isNaN(parseChar)) {
-      return this.state[this.state.currentChar][ind]
-    } else {
-
-    }
-  }
-
   render() {
     return (
       <div className="App" 
@@ -175,10 +165,7 @@ class App extends React.Component {
         onDoubleClick={this.handleDouble}
         onPointerMove={this._onMouseMove.bind(this)}>
         <div>
-          {/* <Circle vibrate={true} currentX={this.state.currentX} currentY={this.state.currentY} posX poxY></Circle> */}
-          {/* <button id="button1">Hello1</button>
-          <button>Hello4</button> */}
-          <Circle id="btn0" mouseDown={this.state.mouseDown} vibrate={this.handleVibrate(0)} currentX={this.state.currentX} currentY={this.state.currentY} posx={this.state.posx[0]} posy={this.state.posy[0]} width={this.state.width} height={this.state.height}/> 
+          <Circle id="btn0" mouseDown={this.state.mouseDown} vibrate={this.state[this.state.currentChar][0]} currentX={this.state.currentX} currentY={this.state.currentY} posx={this.state.posx[0]} posy={this.state.posy[0]} width={this.state.width} height={this.state.height}/> 
           <Circle id="btn1" mouseDown={this.state.mouseDown} vibrate={this.state[this.state.currentChar][1]} currentX={this.state.currentX} currentY={this.state.currentY} posx={this.state.posx[1]} posy={this.state.posy[1]} width={this.state.width} height={this.state.height}/> 
           <Circle id="btn2" mouseDown={this.state.mouseDown} vibrate={this.state[this.state.currentChar][2]} currentX={this.state.currentX} currentY={this.state.currentY} posx={this.state.posx[2]} posy={this.state.posy[2]} width={this.state.width} height={this.state.height}/> 
         </div>
@@ -187,11 +174,6 @@ class App extends React.Component {
           <Circle id="btn4" mouseDown={this.state.mouseDown} vibrate={this.state[this.state.currentChar][4]} currentX={this.state.currentX} currentY={this.state.currentY} posx={this.state.posx[4]} posy={this.state.posy[4]} width={this.state.width} height={this.state.height}/> 
           <Circle id="btn5" mouseDown={this.state.mouseDown} vibrate={this.state[this.state.currentChar][5]} currentX={this.state.currentX} currentY={this.state.currentY} posx={this.state.posx[5]} posy={this.state.posy[5]} width={this.state.width} height={this.state.height}/> 
         </div>
-        {/* <div>{this.state.strIndex}</div>
-        <div>{this.state.currentChar}</div>
-        <div>x: {this.state.currentX} y: {this.state.currentY}</div>
-        <div>{this.state.mouseDown}</div>
-        <div>{this.state['a']}</div> */}
       </div>
     );
   }
